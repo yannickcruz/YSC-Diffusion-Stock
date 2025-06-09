@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YSC Diffusion</title>
+    <link rel="icon" type="image/x-icon" href="./Source/img/logoNew.ico">
+    <link rel="stylesheet" href="./CSS/aux.css">
+    <link rel="stylesheet" href="./CSS/pages/common.css">
+    <link rel="stylesheet" href="./CSS/pages/workflows.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./Source/img/logoNew.png" alt="Logo">
+                </a>
+            </h1>
+            <span class="button_toggle">&#9776;</span>
+            <ul class="navbutton">
+                <li><a href="./imagens.html">Imagens</a></li>
+                <li><a href="#">Workflows</a></li>
+                <li><a href="#">Requisições</a></li>
+            </ul>
+        </div>
+        <ul class="navbutton res">
+                <li><a href="./imagens.html">Imagens</a></li>
+                <li><a href="#">Workflows</a></li>
+                <li><a href="#">Requisições</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="./Source/img/banner.webp" alt="" id="headerImage">
+        <h2>Workflows</h2>
+    </header>
+    <section class="workflowsGrid">
+        <div class="workflow" data-id="workflow1">
+            <h3>Workflow básico</h3>
+            <img src="./Source/img/workflows/basico.webp" alt="Workflow básico" class="workflowPreview" data-original-src="./Source/img/workflows/basico.webp" data-lora-src="./Source/img/workflows/lora0.webp">
+            <ul class="workflowInfo">
+                <li class="download"><a href="https://drive.google.com/file/d/1iAfzIkefQaL1dlGB5y2e3OmgQo0G_avn/view?usp=drive_link" data-href="https://drive.google.com/file/d/1iAfzIkefQaL1dlGB5y2e3OmgQo0G_avn/view?usp=drive_link" data-lora-href="https://drive.google.com/file/d/1pyJNgENdMcnXH7uDpy-1Dk23vqVhAg_c/view?usp=drive_link">Download</a></li>
+                <li class="changer" data-status="original">Versão com Lora</li>
+                <li class="info">Capacidades: Geração básica de imagem</li>
+            </ul>
+            <ul class="workflowInfo">
+                <li class="info">Suporta Flux: Não</li>
+                <li class="info">Custom node: Nenhum</li>
+            </ul>
+            <p class="descricao">Este é o fluxo de trabalho mais básico para o ComfyUI. Ele utiliza
+                apenas nós padrões da interface, não precisando de instalar nenhum custom node. Ideal
+                para novos usuários tanto para o Stable Diffusion, quanto para o ComfyUI em si.
+            </p>
+        </div>
+        <div class="workflow" data-id="workflow2">
+            <h3>Workflow Padrão + Hires-fix + Upscale</h3>
+            <img src="./Source/img/workflows/workflow3.webp" alt="Workflow padrão 1" class="workflowPreview" data-original-src="./Source/img/workflows/workflow3.webp" data-lora-src="./Source/img/workflows/lora1.webp">
+            <ul class="workflowInfo">
+                <li class="download"><a href="https://drive.google.com/file/d/1uGykybi0B3mGE08fU9ZscbbmFufuMGR0/view?usp=drive_link" data-href="https://drive.google.com/file/d/1uGykybi0B3mGE08fU9ZscbbmFufuMGR0/view?usp=drive_link" data-lora-href="https://drive.google.com/file/d/1Ilm_c4SAYY1c-J1wT6gJTxumQlk9sGfe/view?usp=drive_link">Download</a></li>
+                <li class="changer" data-status="original">Versão com Lora</li>
+                <li class="info">Capacidades: Geração de imagem com foco em detalhe e resolução</li>
+            </ul>
+            <ul class="workflowInfo">
+                <li class="info">Suporta Flux: Não</li>
+                <li class="info">Custom node: Nenhum</li>
+            </ul>
+            <p class="descricao">Este fluxo de trabalho combina a geração de imagens padrão
+                com o processo de 'Highres-fix' que consiste em realizar um upscale da imagem e
+                reprocessá-la, aumentando a qualidade e detalhes. Além disto, há um último upscaling
+                com o objetivo de deixar a resulução maior, ideal para projetos.
+            </p>
+        </div>
+        <div class="workflow" data-id="workflow3">
+            <h3>Padrão + Highres-fix + Ultimate Upscaler</h3>
+            <img src="./Source/img/workflows/workflow2.webp" alt="Workflow padrão 1" class="workflowPreview" data-original-src="./Source/img/workflows/workflow2.webp" data-lora-src="./Source/img/workflows/lora2.webp">
+            <ul class="workflowInfo">
+                <li class="download"><a href="https://drive.google.com/file/d/1hyYSEdBLizvnZqX-OJRrjQuIXbnC-tmb/view?usp=drive_link" data-href="https://drive.google.com/file/d/1hyYSEdBLizvnZqX-OJRrjQuIXbnC-tmb/view?usp=drive_link" data-lora-href="https://drive.google.com/file/d/1l6-rTOEG0il9QlFOhsQ6swFnitCPH7w7/view?usp=drive_link">Download</a></li>
+                <li class="changer" data-status="original">Versão com Lora</li>
+                <li class="info">Capacidades: Geração de imagem com foco em detalhe e resolução</li>
+            </ul>
+            <ul class="workflowInfo">
+                <li class="info">Suporta Flux: Não</li>
+                <li class="info">Custom node: SD Ultimate Upscaler</li>
+            </ul>
+            <p class="descricao">Este fluxo realiza as mesmas funções de geração de imagens e Highres-fix,
+                porém, no upscaling final há um custom node (SD Ultimate Upscaler) responsável por aumentar
+                o tamanho da imagens quantas vezes quiser sem comprometer a memória. Ideal para criar imagens
+                em altas resoluções (4k ou superior).
+            </p>
+        </div>
+        <div class="workflow" data-id="workflow4">
+            <h3>Padrão + ControlNet + Hires-fix + Ultimate Upscaler</h3>
+            <img src="./Source/img/workflows/workflow1.webp" alt="Workflow padrão 1" class="workflowPreview" data-original-src="./Source/img/workflows/workflow1.webp" data-lora-src="./Source/img/workflows/lora3.webp">
+            <ul class="workflowInfo">
+                <li class="download"><a href="https://drive.google.com/file/d/1yEzd3XuPRwmZTMpOS-FPiC_S04w9WA4T/view?usp=drive_link" data-href="https://drive.google.com/file/d/1yEzd3XuPRwmZTMpOS-FPiC_S04w9WA4T/view?usp=drive_link" data-lora-href="https://drive.google.com/file/d/1QCNgWiipYxAEsg0HYcmDZRLOKS86nm_Y/view?usp=drive_link">Download</a></li>
+                <li class="changer" data-status="original">Versão com Lora</li>
+                <li class="info">Capacidades: Geração de imagem com foco em detalhe e resolução</li>
+            </ul>
+            <ul class="workflowInfo">
+                <li class="info">Suporta Flux: Não</li>
+                <li class="info">Custom node: SD Ultimate Upscaler</li>
+            </ul>
+            <p class="descricao">Tal fluxo possui um diferencial em utilizar controlnet no meio do fluxo de criação.
+                O controlnet auxilia na precisão de prompt e detalhes, permitindo um maior controle durante a geração,
+                além de aumentar a qualidade e eficiência. Recomenda-se hardware com bom desempenho para velocidades
+                de criação maiores.
+
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="pageFeet">
+            <p>YSC Corporation - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="./script/workflows.js"></script>
+</body>
+</html>

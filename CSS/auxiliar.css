@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('../Source/fonts/BarlowCondensed-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../Source/fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Barlow', sans-serif; 
+    background-color: var(--background);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* The Root Sector*/
+
+:root{
+    --std_cyan: #12bbc1;
+    --dark_cyan: #00405b;
+    --dark_cyan_hover: #0d5574;
+    --std_lightblue: #3e70d5;
+    --hover: #00eaff;
+    --light_gray: #656565;
+    --light_gray_2: #adadad;
+    --std_gray: rgb(43, 43, 43);
+    --black: #000000;
+    --white: #ffffff;
+    --background: #e0e0e0;
+}

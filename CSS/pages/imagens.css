@@ -1,0 +1,156 @@
+body{
+    margin-top: 4rem;
+}
+
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding: 0 150px;
+}
+
+.grids img{
+    width: 100%;
+    height: 20rem;
+    background-color: var(--light_gray);
+    cursor: pointer;
+    overflow: hidden;
+    object-fit: cover;
+}
+.grids img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,.5);
+    transition: transform 0.5s ease;
+}
+
+/*Bloco div de toda a imagem expandida*/
+
+.imgExpandida{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+.imgExpandida.ativo{
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/*Div do container da imagem expandida*/
+
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+}
+.imgContainer img{
+    width: 100%;
+    height: 100%;
+    background-color: var(--light_gray);
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/*UL contendo botões e informações da imagem expandida*/
+
+.funcoes{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50vw;
+    background-color: var(--white);
+}
+
+.imgFunc{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    position: relative;
+}
+/*Botão para fechar a imagem expandida*/
+#close{
+    cursor: pointer;
+    background-color: var(--dark_cyan);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+}
+#close:hover{
+    background-color: var(--dark_cyan_hover);
+}
+/*Botão de download da imagem expandida*/
+#imgDownload a{
+    color: var(--white);
+    background-color: var(--light_gray_2);
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#imgDownload a:hover{
+    background-color: var(--light_gray);
+}
+/*Informações da imagem expandida*/
+.imgInfo{
+    border: solid var(--light_gray_2);
+    padding: 15px;
+}
+
+
+
+/*Media Query para 1000px*/
+@media(max-width: 1000px){
+    .grids{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 50px;
+    }
+    .imgContainer, .funcoes{
+        width: 80%;
+    }
+
+}
+@media(max-width: 768px){
+    .grids{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 25px;
+    }
+    .imgContainer{
+        height: 40%;
+    }
+    .funcoes{
+        justify-content: center;
+    }
+    .imgFunc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+    }
+    .imgInfo{
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    #imgDownload, #imgDownload a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #close, #imgDownload a{
+        padding: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+}

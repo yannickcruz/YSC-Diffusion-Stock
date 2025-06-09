@@ -1,0 +1,138 @@
+/*Bloco do Header*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0 2rem 0;
+    background-color: var(--black);
+    border-bottom: solid var(--dark_cyan);
+    height: 10rem;
+}
+header h2{
+    font-size: 3rem;
+    font-family: 'BebasNeue', serif;
+    color: var(--white);
+    letter-spacing: 0.15rem;
+    position: absolute;
+    z-index: 11;
+}
+#headerImage{
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    z-index: 10;
+    opacity: 70%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+/*Navbar Styles*/
+.button_toggle{
+    display: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-size: 2rem;
+    z-index: 110;
+}
+.logo{
+    margin-top: 0.5rem;
+}
+.logo img{
+    width: 3rem;
+    margin: 0.5rem;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+.navbar{
+    font-family: "BebasNeue", sans-serif;
+    position: fixed;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark_cyan);
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,.5);
+}
+.navbutton.res{
+    display: none;
+}
+.navbutton{
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: left;
+    gap: 6rem;
+    margin-right: 6rem;
+}
+
+.navbutton a{
+    text-decoration: none;
+    color: var(--white);
+}
+.navbutton a:hover{
+    color: var(--hover);
+}
+
+/*Navbar media query*/
+@media(max-width: 768px){
+    .navbar{
+        padding: 0;
+        margin: 0;
+    }
+    .button_toggle{
+        display: block;
+        z-index: 110;
+    }
+    .navbutton{
+        display: none;
+    }
+    .navbutton.res{
+        display: flex;
+        position: fixed;
+        top: -100rem;
+        margin: 0;
+        width: 100%;
+        height: 9rem;
+        background-color: rgba(0, 64, 91, 0.95);
+        transition: top 0.5s ease;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-top: 0.5rem;
+        align-items: center;
+    }
+    .navbutton.res.show{
+        top: 4rem;
+        z-index: 110;
+    }
+    .navbutton li a{
+        display: block;
+        color:var(--white);
+        font-size: 2rem;
+    }
+}
+
+/*Footer sector*/
+.pageFeet{
+    display: flex;
+    width: 100%;
+    margin-top: 10rem;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark_cyan);
+
+}
+.pageFeet p{
+    color: var(--white);
+    font-size: 1rem;
+}
