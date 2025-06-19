@@ -12,4 +12,4 @@ A YSC Diffusion Stock é um projeto básico de um repositório de imagens gerada
 
 ## ☕️ Código
 
-Este site foi escrito usando conceitos basicos de HTML, CSS e Javascript co intuito de aprendizado, além disto com o tempo o site será melhorado trazendo novas funcionalidades e aprimoramentos.
+Este site foi escrito usando conceitos basicos de HTML, CSS e Javascript com intuito de aprendizado, além disto com o tempo o site será melhorado trazendo novas funcionalidades e aprimoramentos.
