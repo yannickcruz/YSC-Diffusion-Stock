@@ -1,3 +1,19 @@
+// Seletor de idiomas
+const languageSelector = document.querySelectorAll(".lang");
+function changeLanguage(){
+    const actualUrl = this.value;
+    console.log("mudou");
+    console.log(actualUrl);
+    
+}
+// languageSelector.addEventListener('change', changeLanguage());
+for(let i = 0; i < languageSelector.length; i++){
+    languageSelector[i].addEventListener('change', changeLanguage());
+    if(i === languageSelector.length){
+        i = 0;
+    }
+}
+
 const button_menu = document.querySelector(".button_toggle");
 const nav_button = document.querySelector(".navbutton.res");
 
