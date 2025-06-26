@@ -1,3 +1,18 @@
+// Seletor de idiomas
+const languageMain = document.getElementById("langMain");
+const languageSec = document.getElementById("langSec");
+function changeLanguage(){
+    const actualUrl = this.value;
+    console.log("mudou");
+    console.log(actualUrl);
+    if(this.options[this.selectedIndex].text !== "idiomas"){
+        window.location.href = actualUrl; 
+    }
+    
+}
+languageMain.addEventListener('change', changeLanguage);
+languageSec.addEventListener('change', changeLanguage);
+
 const button_menu = document.querySelector(".button_toggle");
 const nav_button = document.querySelector(".navbutton.res");
 
