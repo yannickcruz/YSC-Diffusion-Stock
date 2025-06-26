@@ -1,18 +1,17 @@
 // Seletor de idiomas
-const languageSelector = document.querySelectorAll(".lang");
+const languageMain = document.getElementById("langMain");
+const languageSec = document.getElementById("langSec");
 function changeLanguage(){
     const actualUrl = this.value;
     console.log("mudou");
     console.log(actualUrl);
+    if(this.options[this.selectedIndex].text !== "idiomas"){
+        window.location.href = actualUrl; 
+    }
     
 }
-// languageSelector.addEventListener('change', changeLanguage());
-for(let i = 0; i < languageSelector.length; i++){
-    languageSelector[i].addEventListener('change', changeLanguage());
-    if(i === languageSelector.length){
-        i = 0;
-    }
-}
+languageMain.addEventListener('change', changeLanguage);
+languageSec.addEventListener('change', changeLanguage);
 
 const button_menu = document.querySelector(".button_toggle");
 const nav_button = document.querySelector(".navbutton.res");
