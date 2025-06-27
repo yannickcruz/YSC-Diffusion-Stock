@@ -82,6 +82,12 @@ nav{
 .navbutton a:hover{
     color: var(--hover);
 }
+#langMain, #langSec{
+    font-family: 'Barlow', serif;
+    background-color: var(--std_cyan);
+    color: var(--white);
+    border: 6px solid transparent;
+}
 
 /*Navbar media query*/
 @media(max-width: 768px){

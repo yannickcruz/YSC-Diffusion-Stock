@@ -32,7 +32,12 @@ function expandir(evento){
     imgTarget.src = this.src;
     downloadBtn.href = this.dataset.link;
     overlay.classList.add('ativo');
-    imgSize.textContent = `Dimensões: ${imgTarget.naturalWidth * 4}x${imgTarget.naturalHeight * 4}`;
+    const va = imgSize.getAttribute('valor');
+    if(va === "english"){
+       imgSize.textContent = `Dimensions: ${imgTarget.naturalWidth * 4}x${imgTarget.naturalHeight * 4}`; 
+    } else{
+        imgSize.textContent = `Dimensões: ${imgTarget.naturalWidth * 4}x${imgTarget.naturalHeight * 4}`;
+    }
 }
 
 for(let i = 0; i < images.length; i++){

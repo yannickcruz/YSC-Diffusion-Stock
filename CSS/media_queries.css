@@ -17,7 +17,7 @@
         top: -100rem;
         margin: 0;
         width: 100vw;
-        height: 9rem;
+        height: auto;
         background-color: rgba(0, 64, 91, 0.95);
         transition: top 0.5s ease;
         flex-direction: column;
@@ -33,6 +33,9 @@
         display: block;
         color:var(--white);
         font-size: 2rem;
+    }
+    #langMain, #langSec{
+        font-size: 1.5rem;
     }
 }
 
