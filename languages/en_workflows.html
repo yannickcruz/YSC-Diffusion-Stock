@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YSC Diffusion</title>
+    <link rel="icon" type="image/x-icon" href="./Source/img/logoNew.ico">
+    <link rel="stylesheet" href="../CSS/auxiliar.css">
+    <link rel="stylesheet" href="../CSS/pages/common.css">
+    <link rel="stylesheet" href="../CSS/pages/workflows.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar" value="english">
+            <h1 class="logo">
+                <a href="./en.html">
+                    <img src="../Source/img/logoNew.png" alt="Logo">
+                </a>
+            </h1>
+            <span class="button_toggle">&#9776;</span>
+            <ul class="navbutton">
+                <li><a href="./en_images.html">Images</a></li>
+                <li><a href="./en_workflows.html">Workflows</a></li>
+                <li><a href="https://forms.gle/NBBL7prMz41BjTt4A">Requests</a></li>
+                <li>
+                    <select name="idiomas" id="langMain">
+                        <option value="../workflows.html" disabled>Idiomas</option>
+                        <option value="../workflows.html">Português</option>
+                        <option value="./en_workflows.html" selected>English</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <ul class="navbutton res">
+                <li><a href="./en_images.html">Images</a></li>
+                <li><a href="./en_workflows.html">Workflows</a></li>
+                <li><a href="https://forms.gle/NBBL7prMz41BjTt4A">Requests</a></li>
+                <li>
+                    <select name="idiomas" id="langSec">
+                        <option value="../workflows.html" disabled>Idiomas</option>
+                        <option value="../workflows.html">Português</option>
+                        <option value="./en_workflows.html" selected>English</option>
+                    </select>
+                </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="../Source/img/banner.webp" alt="" id="headerImage">
+        <h2>Workflows</h2>
+    </header>
+    <section class="workflowsGrid">
+        <div class="workflow" data-id="workflow1">
+            <h3>Basic Workflow</h3>
+            <img src="../Source/img/workflows/basico.webp" alt="Workflow básico" class="workflowPreview" data-original-src="../Source/img/workflows/basico.webp" data-lora-src="../Source/img/workflows/lora0.webp">
+            <ul class="workflowInfo">
+                <li class="download"><a href="https://drive.google.com/file/d/1iAfzIkefQaL1dlGB5y2e3OmgQo0G_avn/view?usp=drive_link" data-href="https://drive.google.com/file/d/1iAfzIkefQaL1dlGB5y2e3OmgQo0G_avn/view?usp=drive_link" data-lora-href="https://drive.google.com/file/d/1pyJNgENdMcnXH7uDpy-1Dk23vqVhAg_c/view?usp=drive_link">Download</a></li>
+                <li class="changer" data-status="original">Lora version</li>
+                <li class="info">Capabilities: Basic image generation</li>
+            </ul>
+            <ul class="workflowInfo">
+                <li class="info">Supports Flux: No</li>
+                <li class="info">Custom node: None</li>
+            </ul>
+            <p class="descricao">This is the most basic workflow for ComfyUI. It uses only the standard interface nodes, without the need to install any custom nodes. Ideal for new users of both Stable Diffusion and ComfyUI itself.
+            </p>
+        </div>
+        <div class="workflow" data-id="workflow2">
+            <h3>Standard workflow + Hires-fix + Upscale</h3>
+            <img src="../Source/img/workflows/workflow3.webp" alt="Workflow padrão 1" class="workflowPreview" data-original-src="../Source/img/workflows/workflow3.webp" data-lora-src="../Source/img/workflows/lora1.webp">
+            <ul class="workflowInfo">
+                <li class="download"><a href="https://drive.google.com/file/d/1uGykybi0B3mGE08fU9ZscbbmFufuMGR0/view?usp=drive_link" data-href="https://drive.google.com/file/d/1uGykybi0B3mGE08fU9ZscbbmFufuMGR0/view?usp=drive_link" data-lora-href="https://drive.google.com/file/d/1Ilm_c4SAYY1c-J1wT6gJTxumQlk9sGfe/view?usp=drive_link">Download</a></li>
+                <li class="changer" data-status="original">Lora version</li>
+                <li class="info">Capabilities: Image generation with focus on detail and resolution</li>
+            </ul>
+            <ul class="workflowInfo">
+                <li class="info">Supports Flux: No</li>
+                <li class="info">Custom node: None</li>
+            </ul>
+            <p class="descricao">This workflow combines standard image generation
+                with the 'Highres-fix' process, which consists of upscaling the image and
+                reprocessing it, increasing quality and detail. In addition, there is a final upscaling
+                with the aim of making the resolution higher, ideal for projects.
+            </p>
+        </div>
+        <div class="workflow" data-id="workflow3">
+            <h3>Standard + Highres-fix + Ultimate Upscaler</h3>
+            <img src="../Source/img/workflows/workflow2.webp" alt="Workflow padrão 1" class="workflowPreview" data-original-src="../Source/img/workflows/workflow2.webp" data-lora-src="../Source/img/workflows/lora2.webp">
+            <ul class="workflowInfo">
+                <li class="download"><a href="https://drive.google.com/file/d/1hyYSEdBLizvnZqX-OJRrjQuIXbnC-tmb/view?usp=drive_link" data-href="https://drive.google.com/file/d/1hyYSEdBLizvnZqX-OJRrjQuIXbnC-tmb/view?usp=drive_link" data-lora-href="https://drive.google.com/file/d/1l6-rTOEG0il9QlFOhsQ6swFnitCPH7w7/view?usp=drive_link">Download</a></li>
+                <li class="changer" data-status="original">Lora version</li>
+                <li class="info">Capabilities: Image generation with focus on detail and resolution</li>
+            </ul>
+            <ul class="workflowInfo">
+                <li class="info">Supports Flux: No</li>
+                <li class="info">Custom node: SD Ultimate Upscaler</li>
+            </ul>
+            <p class="descricao">This flow performs the same image generation and Highres-fix functions,
+                however, in the final upscaling there is a custom node (SD Ultimate Upscaler) responsible for increasing
+                the size of the images as many times as desired without compromising memory. Ideal for creating images
+                in high resolutions (4k or higher).
+            </p>
+        </div>
+        <div class="workflow" data-id="workflow4">
+            <h3>Standard + ControlNet + Hires-fix + Ultimate Upscaler</h3>
+            <img src="../Source/img/workflows/workflow1.webp" alt="Workflow padrão 1" class="workflowPreview" data-original-src="../Source/img/workflows/workflow1.webp" data-lora-src="../Source/img/workflows/lora3.webp">
+            <ul class="workflowInfo">
+                <li class="download"><a href="https://drive.google.com/file/d/1yEzd3XuPRwmZTMpOS-FPiC_S04w9WA4T/view?usp=drive_link" data-href="https://drive.google.com/file/d/1yEzd3XuPRwmZTMpOS-FPiC_S04w9WA4T/view?usp=drive_link" data-lora-href="https://drive.google.com/file/d/1QCNgWiipYxAEsg0HYcmDZRLOKS86nm_Y/view?usp=drive_link">Download</a></li>
+                <li class="changer" data-status="original">Lora version</li>
+                <li class="info">Capabilities: Image generation with focus on detail and resolution</li>
+            </ul>
+            <ul class="workflowInfo">
+                <li class="info">Supports Flux: No</li>
+                <li class="info">Custom node: SD Ultimate Upscaler</li>
+            </ul>
+            <p class="descricao">This flow has a differential in using controlnet in the middle of the creation flow.
+                Controlnet helps with the precision of prompts and details, allowing greater control during generation,
+                in addition to increasing quality and efficiency. Hardware with good performance is recommended for higher creation speeds.
+
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="pageFeet">
+            <p>YSC Corporation - All rights reserved</p>
+        </div>
+    </footer>
+    <script src="../script/workflows.js"></script>
+</body>
+</html>

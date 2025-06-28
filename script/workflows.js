@@ -32,16 +32,27 @@ function trocar(evento){
     const downloadBtn = workflow.querySelector('.download a');
     const statusAtual = botao.dataset.status;
     const imagem = workflow.querySelector('.workflowPreview');
+    const nav = document.querySelector(".navbar");
+    const eng = nav.getAttribute('value');
+    console.log(eng)
 
     if(statusAtual === 'original'){
         imagem.src = imagem.dataset.loraSrc;
         downloadBtn.href = downloadBtn.dataset.loraHref;
-        botao.textContent = 'Versão sem Lora';
+        if(eng == "english"){
+            botao.textContent = 'Without Lora';
+        } else{
+            botao.textContent = 'Versão sem Lora';
+        }
         botao.dataset.status = 'lora';
     } else{
         imagem.src = imagem.dataset.originalSrc;
         downloadBtn.href = downloadBtn.dataset.href;
-        botao.textContent = 'Versão com Lora';
+        if(eng == "english"){
+            botao.textContent = 'Lora version';
+        } else{
+            botao.textContent = 'Versão com Lora';
+        }
         botao.dataset.status = 'original';
     }
 }
