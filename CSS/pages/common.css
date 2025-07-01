@@ -108,7 +108,7 @@ nav{
         top: -100rem;
         margin: 0;
         width: 100%;
-        height: 9rem;
+        height: auto;
         background-color: rgba(0, 64, 91, 0.95);
         transition: top 0.5s ease;
         flex-direction: column;
